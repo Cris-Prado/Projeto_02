@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Fantasma Codes</title>
+</head>
+<body class="corpo night-mode-available">
+    <header>
+        <nav class="navbar">
+            <div class='container'>
+                <div class="menu-norm">
+                    <label class="open-menu-all" for="open-menu-all">
+                        <input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
+                        <div class="toggle">
+                            <div class="linhas"></div>
+                            <div class="linhas"></div>
+                            <div class="linhas"></div>
+                        </div>
+                        <ul class="list-menus">
+                            <a href="" class="item-logo"><p>Fantasma Codes</p></a>
+                            <li class="item-menu">
+                                <a href="/" class="link-menu">Inicio</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="/" class="link-menu">Sobre mim</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="/" class="link-menu">Dowload</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="/" class="link-menu">Repositórios</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="/" class="link-menu">Comente</a>
+                            </li>
+                            <div class="item-menu night-mode-available">
+                                <div class="night-mode-button">
+                                    <input type="checkbox" class="checkbox" id="night-mode">
+                                    <label for="night-mode" class="label">
+                                        <i class='bx bxs-moon'></i>
+                                        <i class='bx bxs-sun'></i>
+                                    <div class="blob"></div>
+                                </label>
+                                </div>
+                            </div>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main night-mode-available">
+        <div class="cabecalho">
+            <h1 class="titulo">Tecnologia Web</h1>
+            <div class="linha night-mode-available"></div>
+            <div class="introducao">
+                <p class="pg1" style="text-indent: 1.5rem;">Olá seja muito bem vindo a minha pagina web!<br></p>
+                <p class="pg2"> Aqui irei te mostrar meus repositórios, documentação e linguagens de programação ferrramentas etc.</p>
+            </div>
+        </div>
+        <div class="rolagem">
+            <div class="conteudo-web">
+                <img src="https://www.datocms-assets.com/14946/1590690690-front-end.jpg" alt="Fron-End" >
+                <img src="https://i.ytimg.com/vi/83hKohXw1Fo/maxresdefault.jpg" alt="Back-End">
+            </div>
+        </div>
+    </main>
+<script  type="text/javascript">
+     document.querySelector('.checkbox').addEventListener('change',()=>{
+        document.querySelectorAll('.night-mode-available').forEach(ele=>{
+            ele.classList.toggle('night')
+        })
+    });
+</script>
+<script>
+    let menutoggle = document.querySelector('.toggle');
+    menutoggle.onclick = function(){
+        menutoggle.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
